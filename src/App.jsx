@@ -11,6 +11,14 @@ function App() {
       <Header />
 
       <main>
+        <section id="about">
+          <div className="profile">
+            <img src="https://m.media-amazon.com/images/S/amzn-author-media-prod/v0f9vlqdqo3p56bgjt02q3pdb7.jpg" />
+          </div>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quisquam, neque tenetur placeat, odit suscipit quasi eos nihil, et nam corporis natus illum? Similique nesciunt libero, recusandae expedita unde error?</p>
+        </section>
+
         <Section title="Livros" id="books">
           <Book src="https://m.media-amazon.com/images/I/416ZtVU96OL.jpg" />
           <Book src="https://m.media-amazon.com/images/I/51VTOFxuK8L.jpg" />
