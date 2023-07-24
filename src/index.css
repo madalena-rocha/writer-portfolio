@@ -32,3 +32,12 @@ button {
   border: none;
   cursor: pointer;
 }
+
+a, button {
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover, button:hover {
+  scale: 1.1;
+  opacity: 0.6;
+}
