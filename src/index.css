@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --primary-color: black;
+  --secondary-color: white;
+  --tertiary-color: gray;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+body, button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
