@@ -18,24 +18,24 @@ export const Container = styled.div`
     width: 20rem;
     height: 32rem;
   }
+`;
 
-  > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2.4rem;
+export const Details = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.4rem;
 
-    svg {
-      position: absolute;
-      top: 2.4rem;
-      right: 2.4rem;
-    }
+  > svg {
+    position: absolute;
+    top: 2.4rem;
+    right: 2.4rem;
+  }
 
-    a {
-      width: fit-content;
-      padding: 1rem 1.6rem;
-      border-radius: 8px;
-      background-color: var(--primary-color);
-    }
+  > a {
+    width: fit-content;
+    padding: 1rem 1.6rem;
+    border-radius: 8px;
+    background-color: var(--primary-color);
   }
 `;
