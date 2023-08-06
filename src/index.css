@@ -30,14 +30,17 @@ a {
 button {
   background: none;
   border: none;
+}
+
+button, svg {
   cursor: pointer;
 }
 
-a, button {
+a, button, svg {
   transition: all 0.2s ease-in-out;
 }
 
-a:hover, button:hover {
+a:hover, button:hover, svg:hover {
   scale: 1.1;
   opacity: 0.6;
 }

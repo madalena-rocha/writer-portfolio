@@ -1,4 +1,5 @@
 import { Header } from './components/Header'
+import { Modal } from './components/Modal'
 import { Section } from './components/Section'
 import { Book } from './components/Book'
 import { Footer } from './components/Footer'
@@ -18,6 +19,13 @@ function App() {
 
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quisquam, neque tenetur placeat, odit suscipit quasi eos nihil, et nam corporis natus illum? Similique nesciunt libero, recusandae expedita unde error?</p>
         </section>
+
+        <Modal 
+          href="https://a.co/d/ivy0YRj" 
+          src="https://m.media-amazon.com/images/I/416ZtVU96OL.jpg" 
+          title="Mariana Em Busca de um Sentido"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quisquam, neque tenetur placeat, odit suscipit quasi eos nihil, et nam corporis natus illum? Similique nesciunt libero, recusandae expedita unde error?"
+        />
 
         <Section title="Livros" id="books">
           <Book src="https://m.media-amazon.com/images/I/416ZtVU96OL.jpg" />
