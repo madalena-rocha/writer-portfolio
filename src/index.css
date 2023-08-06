@@ -7,9 +7,13 @@
 :root {
   font-size: 62.5%;
 
-  --primary-color: black;
-  --secondary-color: white;
-  --tertiary-color: gray;
+  --primary-color: #343330;
+  --secondary-color: #EEEAE3;
+  --tertiary-color: #AB989B;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -20,6 +24,15 @@ body {
 body, button {
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--tertiary-color);
+  border-radius: 0.8rem;
 }
 
 a {
