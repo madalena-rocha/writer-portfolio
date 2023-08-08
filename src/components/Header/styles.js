@@ -20,6 +20,10 @@ export const Container = styled.header`
   }
 `;
 
+export const Icon = styled.div`
+  display: flex;
+`;
+
 export const Navigation = styled.nav`
   > ul {
     display: flex;

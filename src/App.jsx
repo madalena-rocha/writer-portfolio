@@ -1,4 +1,8 @@
+import { useState } from "react";
+import { useMediaQuery } from "react-responsive";
+
 import { Header } from "./components/Header";
+import { Menu } from "./components/Menu";
 import { Modal } from "./components/Modal";
 import { Section } from "./components/Section";
 import { Book } from "./components/Book";
@@ -7,6 +11,9 @@ import { Footer } from "./components/Footer";
 import { Container, About, Profile } from "./App.js";
 
 function App() {
+  const isDesktop = useMediaQuery({ minWidth: 1024 });
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const booksData = [
     {
       src: "https://m.media-amazon.com/images/I/416ZtVU96OL.jpg",
@@ -39,7 +46,11 @@ function App() {
 
   return (
     <Container id="home">
-      <Header />
+      <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+
+      {!isDesktop && (
+        <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      )}
 
       <main>
         <About>
@@ -55,12 +66,12 @@ function App() {
           </p>
         </About>
 
-        <Modal
+        {/* <Modal
           href="https://a.co/d/ivy0YRj"
           src="https://m.media-amazon.com/images/I/416ZtVU96OL.jpg"
           title="Mariana Em Busca de um Sentido"
           description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quisquam, neque tenetur placeat, odit suscipit quasi eos nihil, et nam corporis natus illum? Similique nesciunt libero, recusandae expedita unde error?"
-        />
+        /> */}
 
         <Section title="Livros" id="books">
           {booksData.map((book, index) => (
