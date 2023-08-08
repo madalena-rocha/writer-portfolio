@@ -6,7 +6,7 @@ export const Container = styled.div`
   height: 100vh;
   z-index: 9999;
 
-  margin-top: 9.4rem;
+  margin-top: 10.8rem;
   padding: 3.2rem 2.8rem;
   background-color: var(--secondary-color);
 

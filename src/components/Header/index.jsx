@@ -1,22 +1,21 @@
 import { List, X } from "phosphor-react";
 import { useMediaQuery } from "react-responsive";
 
-import { Container, Icon, Navigation } from "./styles";
+import { Container, Brand, Icon, Navigation } from "./styles";
 
 export function Header({ isMenuOpen, setIsMenuOpen }) {
   const isDesktop = useMediaQuery({ minWidth: 1024 });
 
   return (
     <Container>
-      <h1>Marta Machado Rocha</h1>
+      <Brand>
+        <h1>Marta Machado Rocha</h1>
+      </Brand>
 
       {!isDesktop ? (
-        <Icon>
-          {!isMenuOpen ? (
-            <List size={24} onClick={() => setIsMenuOpen(true)} />
-          ) : (
-            <X size={24} onClick={() => setIsMenuOpen(false)} />
-          )}
+        <Icon isMenuOpen={isMenuOpen}>
+          <List size={24} onClick={() => setIsMenuOpen(true)} />
+          <X size={24} onClick={() => setIsMenuOpen(false)} />
         </Icon>
       ) : (
         <Navigation>

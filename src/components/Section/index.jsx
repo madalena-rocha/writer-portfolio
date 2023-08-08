@@ -1,8 +1,8 @@
 import { Container } from "./styles";
 
-export function Section({ id, title, children }) {
+export function Section({ title, children, ...rest }) {
   return (
-    <Container id={id}>
+    <Container {...rest}>
       <h2>{title}</h2>
       <div>{children}</div>
     </Container>

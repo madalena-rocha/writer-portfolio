@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: grid;
-  grid-template-rows: 9.4rem auto 9.4rem;
+  grid-template-rows: 10.8rem auto 10.8rem;
   grid-template-areas:
     "header"
     "content"
@@ -15,7 +15,8 @@ export const Container = styled.div`
     flex-direction: column;
     gap: 3.2rem;
 
-    padding-inline: 12.3rem;
+    width: 100%;
+    padding-inline: 2.8rem;
 
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -23,6 +24,12 @@ export const Container = styled.div`
 
   section:last-of-type {
     margin-bottom: 3.2rem;
+  }
+
+  @media (min-width: 1024px) {
+    > main {
+      padding-inline: 12.3rem;
+    }
   }
 `;
 
