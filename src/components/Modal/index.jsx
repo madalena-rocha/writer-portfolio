@@ -1,11 +1,13 @@
 import { X } from 'phosphor-react';
 
-import { Container, Details } from "./styles";
+import { Container, Image, Details } from "./styles";
 
 export function Modal({ src, alt, title, description, href }) {
   return (
     <Container>
-      <img src={src} alt={alt} />
+      <Image>
+        <img src={src} alt={alt} />
+      </Image>
 
       <Details>
         <X size={24} />
