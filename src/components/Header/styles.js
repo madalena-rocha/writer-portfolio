@@ -11,7 +11,7 @@ export const Container = styled.header`
   justify-content: space-between;
 
   padding: 1.6rem 2.8rem;
-  background-color: var(--primary-color);
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
 
   position: fixed;
   z-index: 9999;
@@ -23,7 +23,7 @@ export const Container = styled.header`
 
 export const Brand = styled.div`
   > h1 {
-    color: var(--tertiary-color);
+    color: ${({ theme }) => theme.COLORS.BRAND};
   }
 `;
 
@@ -60,7 +60,7 @@ export const Navigation = styled.nav`
     content: '';
     width: 0%;
     height: 2px;
-    background-color: var(--secondary-color);
+    background-color: ${({ theme }) => theme.COLORS.WHITE};
 
     position: relative;
     bottom: -2rem;

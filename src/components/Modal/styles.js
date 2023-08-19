@@ -11,7 +11,7 @@ export const Container = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
 
-  background-color: var(--tertiary-color);
+  background-color: ${({ theme }) => theme.COLORS.BRAND};
   padding: 2.4rem;
   border-radius: 8px;
   margin-top: 10.8rem;
@@ -54,6 +54,6 @@ export const Details = styled.div`
     width: fit-content;
     padding: 1rem 1.6rem;
     border-radius: 8px;
-    background-color: var(--primary-color);
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
   }
 `;

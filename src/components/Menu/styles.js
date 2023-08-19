@@ -8,7 +8,7 @@ export const Container = styled.div`
 
   margin-top: 10.8rem;
   padding: 3.2rem 2.8rem;
-  background-color: var(--secondary-color);
+  background-color: ${({ theme }) => theme.COLORS.WHITE};
 
   visibility: ${({ isMenuOpen }) => (isMenuOpen ? "visible" : "hidden")};
   opacity: ${({ isMenuOpen }) => (isMenuOpen ? "1" : "0")};
@@ -20,7 +20,7 @@ export const Container = styled.div`
     gap: 3.2rem;
 
     a {
-      color: var(--primary-color);
+      color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
     }
   }
 `;

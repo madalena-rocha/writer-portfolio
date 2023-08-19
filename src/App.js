@@ -18,8 +18,8 @@ export const Container = styled.div`
     width: 100%;
     padding-inline: 2.8rem;
 
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: ${({ theme }) => theme.COLORS.WHITE};
+    color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
   }
 
   section:last-of-type {
@@ -58,7 +58,7 @@ export const Profile = styled.div`
     object-position: top;
 
     padding: 3.7px;
-    border: 4px solid var(--tertiary-color);
+    border: 4px solid ${({ theme }) => theme.COLORS.BRAND};
     border-radius: 50%;
   }
 `;
