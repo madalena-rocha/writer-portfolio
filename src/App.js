@@ -22,6 +22,10 @@ export const Container = styled.div`
     color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
   }
 
+  #books > div, #tales > div {
+    text-align: left;
+  }
+
   section:last-of-type {
     margin-bottom: 3.2rem;
   }
