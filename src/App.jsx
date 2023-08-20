@@ -5,6 +5,7 @@ import { Header } from "./components/Header";
 import { Menu } from "./components/Menu";
 import { Section } from "./components/Section";
 import { Book } from "./components/Book";
+import { BackToTop } from "./components/BackToTop";
 import { Footer } from "./components/Footer";
 
 import { Container, About, Profile } from "./App.js";
@@ -115,6 +116,8 @@ function App() {
           ))}
         </Section>
       </main>
+
+      <BackToTop />
 
       <Footer />
     </Container>
