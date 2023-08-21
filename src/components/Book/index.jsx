@@ -9,7 +9,11 @@ export function Book({ src, alt, title, description, href }) {
 
       <Details>
         <h2>{title}</h2>
-        <p>{description}</p>
+        <div>
+          {description.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
+        </div>
         <a href={href} target="_blank">Comprar</a>
       </Details>
     </Container>

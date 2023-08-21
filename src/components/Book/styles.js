@@ -32,6 +32,10 @@ export const Details = styled.div`
   justify-content: center;
   gap: 2.4rem;
 
+  > div p + p {
+    margin-top: 1.6rem;
+  }
+
   > a {
     width: fit-content;
     padding: 1rem 1.6rem;
