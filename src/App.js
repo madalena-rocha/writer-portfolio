@@ -13,7 +13,7 @@ export const Container = styled.div`
     
     display: flex;
     flex-direction: column;
-    gap: 3.2rem;
+    gap: 6.4rem;
 
     width: 100%;
     padding-inline: 2.8rem;
@@ -27,7 +27,7 @@ export const Container = styled.div`
   }
 
   section:last-of-type {
-    margin-bottom: 3.2rem;
+    margin-bottom: 6.4rem;
   }
 
   @media (min-width: 1024px) {
@@ -43,7 +43,7 @@ export const About = styled.section`
   align-items: center;
   text-align: center;
 
-  margin-top: 3.2rem;
+  margin-top: 6.4rem;
 `;
 
 export const Profile = styled.div`

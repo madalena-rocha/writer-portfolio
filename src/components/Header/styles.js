@@ -23,6 +23,7 @@ export const Container = styled.header`
 
 export const Brand = styled.div`
   > h1 {
+    font-size: 2.8rem;
     color: ${({ theme }) => theme.COLORS.BRAND};
   }
 `;
@@ -54,25 +55,5 @@ export const Navigation = styled.nav`
   > ul {
     display: flex;
     gap: 3.2rem;
-  }
-        
-  a::after {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background-color: ${({ theme }) => theme.COLORS.WHITE};
-
-    position: relative;
-    bottom: -2rem;
-    left: -0.5rem;
-
-    display: block;
-
-    transition: width 0.2s;
-  }
-
-  a:hover::after {
-    padding-inline: 0.8rem;
-    width: 100%;
   }
 `;
