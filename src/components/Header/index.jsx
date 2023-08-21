@@ -3,7 +3,7 @@ import { useMediaQuery } from "react-responsive";
 
 import { Container, Brand, Icon, Navigation } from "./styles";
 
-export function Header({ isMenuOpen, setIsMenuOpen }) {
+export function Header({ isMenuOpen, setIsMenuOpen, activeSection }) {
   const isDesktop = useMediaQuery({ minWidth: 1024 });
 
   return (
@@ -20,11 +20,38 @@ export function Header({ isMenuOpen, setIsMenuOpen }) {
       ) : (
         <Navigation>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#books">Livros</a></li>
-            <li><a href="#tales">Contos</a></li>
-            <li><a href="#news">Notícias</a></li>
+            <li>
+              <a
+                href="#home"
+                className={activeSection === "home" ? "active" : ""}
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#books"
+                className={activeSection === "books" ? "active" : ""}
+              >
+                Livros
+              </a>
+            </li>
+            <li>
+              <a
+                href="#tales"
+                className={activeSection === "tales" ? "active" : ""}
+              >
+                Contos
+              </a>
+            </li>
+            <li>
+              <a
+                href="#news"
+                className={activeSection === "news" ? "active" : ""}
+              >
+                Notícias
+              </a>
+            </li>
           </ul>
         </Navigation>
       )}

@@ -56,4 +56,9 @@ export const Navigation = styled.nav`
     display: flex;
     gap: 3.2rem;
   }
+
+  .active {
+    font-weight: 700;
+    color: ${({ theme }) => theme.COLORS.BRAND};
+  }
 `;

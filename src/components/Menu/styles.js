@@ -22,5 +22,10 @@ export const Container = styled.div`
     a {
       color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
     }
+
+    .active {
+      font-weight: 700;
+      color: ${({ theme }) => theme.COLORS.BRAND};
+    }
   }
 `;

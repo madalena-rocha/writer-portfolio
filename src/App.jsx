@@ -9,11 +9,12 @@ import { New } from "./components/New";
 import { BackToTop } from "./components/BackToTop";
 import { Footer } from "./components/Footer";
 
-import { Container, About, Profile, Presentation } from "./App.js";
+import { Container, Profile, Presentation } from "./App.js";
 
 function App() {
   const isDesktop = useMediaQuery({ minWidth: 1024 });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   const booksData = [
     {
@@ -106,15 +107,23 @@ function App() {
   ];
 
   return (
-    <Container id="home">
-      <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+    <Container>
+      <Header
+        isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
+        activeSection={activeSection}
+      />
 
       {!isDesktop && (
-        <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+        <Menu
+          isMenuOpen={isMenuOpen}
+          setIsMenuOpen={setIsMenuOpen}
+          activeSection={activeSection}
+        />
       )}
 
       <main>
-        <About>
+        <Section title="" id="home" setActiveSection={setActiveSection}>
           <Profile>
             <img src="https://m.media-amazon.com/images/S/amzn-author-media-prod/v0f9vlqdqo3p56bgjt02q3pdb7.jpg" />
           </Profile>
@@ -133,9 +142,9 @@ function App() {
               trabalhos voluntários na área pedagógica.
             </p>
           </Presentation>
-        </About>
+        </Section>
 
-        <Section title="Livros" id="books">
+        <Section title="Livros" id="books" setActiveSection={setActiveSection}>
           {booksData.map((book, index) => (
             <Book
               key={index}
@@ -148,7 +157,7 @@ function App() {
           ))}
         </Section>
 
-        <Section title="Contos" id="tales">
+        <Section title="Contos" id="tales" setActiveSection={setActiveSection}>
           {talesData.map((tale, index) => (
             <Book
               key={index}
@@ -161,7 +170,7 @@ function App() {
           ))}
         </Section>
 
-        <Section title="Notícias" id="news">
+        <Section title="Notícias" id="news" setActiveSection={setActiveSection}>
           {newsData.map((notice, index) => (
             <New
               key={index}

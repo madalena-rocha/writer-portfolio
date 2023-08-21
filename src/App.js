@@ -22,6 +22,13 @@ export const Container = styled.div`
     color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
   }
 
+  #home > div {
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top: 6.4rem;
+  }
+
   #books > div, #tales > div {
     text-align: left;
   }
@@ -35,15 +42,6 @@ export const Container = styled.div`
       padding-inline: 12.3rem;
     }
   }
-`;
-
-export const About = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-
-  margin-top: 6.4rem;
 `;
 
 export const Profile = styled.div`
