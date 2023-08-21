@@ -20,24 +20,31 @@ function App() {
       src: "https://m.media-amazon.com/images/I/416ZtVU96OL.jpg",
       alt: "",
       title: "Mariana: Em Busca de um Sentido",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quisquam, neque tenetur placeat, odit suscipit quasi eos nihil, et nam corporis natus illum? Similique nesciunt libero, recusandae expedita unde error?",
+      description: `A trajetória de Mariana nunca foi fácil. Conflitos familiares, problemas emocionais e dificuldades financeiras sempre fizeram parte do seu dia a dia.
+        Tudo o que ela mais queria era ter uma vida diferente daquela que levava na casa dos pais. Porém, a estrada para o autoconhecimento não é apenas longa, mas também árdua.
+        Presa nas teias da ilusão, Mariana vê seus sonhos caírem por terra quando o primogênito começa a apresentar um comportamento indesejado. Apontada como culpada pelos atos do filho, ela se depara com um mal que já afligia a família há bastante tempo. Os transtornos psicológicos.
+        Dividida entre a crença e a negação, a jovem mãe logo descobre que, para ajudar os outros, antes é preciso ajudar a si mesma. Uma jornada que a levará a se perder. E depois, se encontrar.`,
       href: "https://a.co/d/ivy0YRj",
     },
     {
       src: "https://m.media-amazon.com/images/I/51VTOFxuK8L.jpg",
       alt: "",
       title: "Memórias e Lenços",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quisquam, neque tenetur placeat, odit suscipit quasi eos nihil, et nam corporis natus illum? Similique nesciunt libero, recusandae expedita unde error?",
+      description: `O tempo passa, destrói, reconstrói, muda. Nada permanece imaculado pelas mãos insensíveis do tempo. O que nos resta de tudo o que vivemos são as lembranças. Já adulta, durante as férias em Riacho Novo, Geovana encontra uma caixa que estava há muito tempo esquecida em um velho guarda-roupa. Dentro dela estavam seus lenços e muitas memórias.
+        Em uma viagem pelo passado, ela lembra dos seus 16 anos, quando era apenas uma garota apaixonada pelo namorado, que se ocupava com os estudos e com o gatinho que havia encontrado abandonado, além de visitar Laura e Miguel, seus melhores amigos.
+        Em meio à interferência de familiares em sua vida, ela sonha com a liberdade. Com a chegada de seu insuportável irmão, a pressão para que se casasse se tornou cada vez maior, porém, ela possuía outros planos.
+        A vida exigiu decisões difíceis para conseguir a tão sonhada independência financeira e problemas de saúde abalaram sua frágil autoestima, restando a ela, lutar com todas as forças por um final feliz.`,
       href: "https://a.co/d/9wLfEyE",
     },
     {
       src: "https://m.media-amazon.com/images/I/41mWh3AktmL.jpg",
       alt: "",
       title: "Vidas Entrelaçadas",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quisquam, neque tenetur placeat, odit suscipit quasi eos nihil, et nam corporis natus illum? Similique nesciunt libero, recusandae expedita unde error?",
+      description: `Bem-vindos às Terras Ocultas, um lugar cheio de lendas e mistérios!
+        Aqui você conhecerá Pedro, um tranquilo morador do Vale que vê sua vida desmoronar ao confirmar o envolvimento da esposa com Eduardo. Para piorar as coisas, Nandinho, antigo inimigo de Pedro, que vivia há anos do outro lado das montanhas, volta para colocar em prática o seu plano.
+        Em meio à tristeza e o abuso de álcool, Pedro recebe a visita de um misterioso ser em seus sonhos, a quem chama de "amigo secreto". Aos poucos, fatos estranhos se tornam cada vez mais presentes em sua vida.
+        Após se tornar cadeirante, ele vê Nandinho ganhar poderes e iniciar uma grande perseguição no Vale. Então, seu amigo lhe revela que ele é o escolhido para devolver a tranquilidade para aquelas terras.
+        Para isso, ele contará com a ajuda das pessoas mais improváveis, terá que rever suas intrigas pessoais e iniciar sua jornada rumo às montanhas à procura de respostas.`,
       href: "https://a.co/d/0Q9Pe32",
     },
   ];
@@ -47,24 +54,25 @@ function App() {
       src: "https://m.media-amazon.com/images/I/31vHOY2oxvL.jpg",
       alt: "",
       title: "Maldição",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quisquam, neque tenetur placeat, odit suscipit quasi eos nihil, et nam corporis natus illum? Similique nesciunt libero, recusandae expedita unde error?",
+      description: `Apesar de saber a gravidade do seu crime, Zezão achou que tudo ficaria bem quando sua prima Yane, persuadida pelos próprios familiares, retirou a acusação que pesava sobre ele e Berto, seu amigo.
+        Porém, ele não poderia estar mais enganado, pois não demorou até que coisas estranhas começassem a acontecer.`,
       href: "https://a.co/d/b7yL2iL",
     },
     {
       src: "https://m.media-amazon.com/images/I/41l8NfBhJuL.jpg",
       alt: "",
-      title: "ELOS&ELAS",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quisquam, neque tenetur placeat, odit suscipit quasi eos nihil, et nam corporis natus illum? Similique nesciunt libero, recusandae expedita unde error?",
+      title: "Elos&Elas",
+      description: `Esta obra é resultado da ação de um conjunto de mulheres escritoras, que se conheceram durante a construção de uma Antologia. Deste encontro, resultou a criação de um grupo no Instagram, o qual leva o título do presente livro. Tal composição foi definida em meio ao lanche da tarde de um agradável dia de outono, em maio de 2022. Entre goles de café e prosas animadas, a intenção foi firmada:  lançar à dignidade do vento os nomes, os escritos, os elos e os zelos. Mas, o vento trouxe uma surpresa e o intento ganhou simpatizantes. Se, inicialmente, contava-se dezessete escritoras, agora conta-se vinte e três. Entre poemas, contos, crônicas e narrativas, um fio condutor foi tecido: a amizade, a lealdade e a união – e outros subtemas que se comunicam. Cada qual com seu toque e sua tonalidade. Que o resultado dessa tessitura cante em sua alma, como o canto do tear ecoa na aragem.`,
       href: "https://a.co/d/bH6FcLg",
     },
     {
       src: "https://m.media-amazon.com/images/I/51WNi7Lm5KL.jpg",
       alt: "",
       title: "Literatura Fantástica: Revista Pulp Nacional",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quisquam, neque tenetur placeat, odit suscipit quasi eos nihil, et nam corporis natus illum? Similique nesciunt libero, recusandae expedita unde error?",
+      description: `A Revista Literatura Fantástica é um projeto periódico pulp, sendo esta sua primeira edição.
+        Aqui, o leitor encontrará futuros distópicos, casas assombradas, agrestes e sertões futuristas, aventuras espaciais, monstros exóticos, criaturas abissais, horrores insondáveis, ruas cariocas repletas de anjos e demônios, histórias de fantasmas, tecnologias mirabolantes, seres além de nossa compreensão, divindades, utopias, os elementos surreais de um Brasil profundo e muito mais.
+        Prepare-se para quase 60 aventuras elaboradas por diversos autores, que compõem diferentes vozes da Literatura Fantástica do Brasil; formando o que talvez seja a coletânea mais diversificada em temas e autores já criada no país.
+        Todos os royalties serão revertidos para ações beneficentes.`,
       href: "https://a.co/d/hl2NVyu",
     },
   ];
