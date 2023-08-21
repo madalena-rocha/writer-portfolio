@@ -24,6 +24,7 @@ export function Header({ isMenuOpen, setIsMenuOpen }) {
             <li><a href="#about">Sobre</a></li>
             <li><a href="#books">Livros</a></li>
             <li><a href="#tales">Contos</a></li>
+            <li><a href="#news">Notícias</a></li>
           </ul>
         </Navigation>
       )}

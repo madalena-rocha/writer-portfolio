@@ -5,6 +5,7 @@ import { Header } from "./components/Header";
 import { Menu } from "./components/Menu";
 import { Section } from "./components/Section";
 import { Book } from "./components/Book";
+import { New } from "./components/New";
 import { BackToTop } from "./components/BackToTop";
 import { Footer } from "./components/Footer";
 
@@ -68,6 +69,34 @@ function App() {
     },
   ];
 
+  const newsData = [
+    {
+      href: "https://doidosporserieselivros.blogspot.com/2023/01/lancamento-de-marta-machado-rocha.html?m=1&fbclid=IwAR1P0t7P_56sAvXsqoXHdWINZaOl6bkJ1GxBll1lhlwI5NRJCOiOs5tgrDk",
+      title: "Doidos por Séries e Livros",
+      date: "19 janeiro 2023",
+    },
+    {
+      href: "https://ummergulhonaliteratura.blogspot.com/2021/07/entrevista-com-autora-marta-machado.html?m=1&fbclid=IwAR3TFL9LuooCpN-5zx1bzVSIv0oISGNxyRY5qLgubGUzAARta3GJAlCil1U",
+      title: "Um Mergulho na Literatura",
+      date: "16 julho 2021",
+    },
+    {
+      href: "https://elizaeedgar.wixsite.com/entrecantosecontos/post/m%C3%A1culas-do-tempo?fbclid=IwAR1r7ATJSNCdURYRZSxZR--WxsC2xv0W56CWczj4hfP0Kw0V3aglI93fDfE",
+      title: "Máculas do Tempo",
+      date: "5 julho 2021",
+    },
+    {
+      href: "https://dipapocomdudu.webnode.page/copia-de-2020/?fbclid=IwAR3NpSFzanFqGg6k6l0nZ0MZ9JxSpIh4MBpaKvs6MQHvwoZyUc8rFlqpMfY",
+      title: "Di Papo com Dudu",
+      date: "abril 2021",
+    },
+    {
+      href: "https://novodiarionoticias.blogspot.com/2020/08/entrevista-com-autora-marta-machado.html?fbclid=IwAR3yeMo7WEVbmH8MF01Yi5jNfRkgPYuyzc3dVwIVdJKjQUCNnrS93Zh8PZo",
+      title: "Diário de Notícias",
+      date: "24 agosto 2020",
+    },
+  ];
+
   return (
     <Container id="home">
       <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
@@ -112,6 +141,17 @@ function App() {
               title={tale.title}
               description={tale.description}
               href={tale.href}
+            />
+          ))}
+        </Section>
+
+        <Section title="Notícias" id="news">
+          {newsData.map((notice, index) => (
+            <New
+              key={index}
+              href={notice.href}
+              title={notice.title}
+              date={notice.date}
             />
           ))}
         </Section>
