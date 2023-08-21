@@ -37,17 +37,17 @@ export const Icon = styled.div`
     right: 2.8rem;
     transform: translateY(-50%);
 
+    &.visible {
+      visibility: visible;
+      opacity: 1;
+    }
+    
+    &.hidden {
+      visibility: hidden;
+      opacity: 0;
+    }
+
     transition: opacity 0.7s ease-out, visibility 0.7s ease-out;
-
-    &:nth-child(1) {
-      visibility: ${({ isMenuOpen }) => (isMenuOpen ? "hidden" : "visible")};
-      opacity: ${({ isMenuOpen }) => (isMenuOpen ? "0" : "1")};
-    }
-
-    &:nth-child(2) {
-      visibility: ${({ isMenuOpen }) => (isMenuOpen ? "visible" : "hidden")};
-      opacity: ${({ isMenuOpen }) => (isMenuOpen ? "1" : "0")};
-    }
   }
 `;
 

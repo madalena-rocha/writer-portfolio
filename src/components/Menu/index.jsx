@@ -1,8 +1,13 @@
 import { Container } from "./styles";
 
-export function Menu({ isMenuOpen, activeSection, handleSectionScroll }) {
+export function Menu({
+  isMenuOpen,
+  setIsMenuOpen,
+  activeSection,
+  handleSectionScroll,
+}) {
   return (
-    <Container isMenuOpen={isMenuOpen}>
+    <Container className={isMenuOpen ? 'visible' : 'hidden'}>
       <ul>
         <li>
           <a
@@ -11,6 +16,7 @@ export function Menu({ isMenuOpen, activeSection, handleSectionScroll }) {
             onClick={(e) => {
               e.preventDefault();
               handleSectionScroll("home");
+              setIsMenuOpen(false);
             }}
           >
             Home
@@ -23,6 +29,7 @@ export function Menu({ isMenuOpen, activeSection, handleSectionScroll }) {
             onClick={(e) => {
               e.preventDefault();
               handleSectionScroll("books");
+              setIsMenuOpen(false);
             }}
           >
             Livros
@@ -35,6 +42,7 @@ export function Menu({ isMenuOpen, activeSection, handleSectionScroll }) {
             onClick={(e) => {
               e.preventDefault();
               handleSectionScroll("tales");
+              setIsMenuOpen(false);
             }}
           >
             Contos
@@ -47,6 +55,7 @@ export function Menu({ isMenuOpen, activeSection, handleSectionScroll }) {
             onClick={(e) => {
               e.preventDefault();
               handleSectionScroll("news");
+              setIsMenuOpen(false);
             }}
           >
             Notícias
