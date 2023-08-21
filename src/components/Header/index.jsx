@@ -3,11 +3,16 @@ import { useMediaQuery } from "react-responsive";
 
 import { Container, Brand, Icon, Navigation } from "./styles";
 
-export function Header({ isMenuOpen, setIsMenuOpen, activeSection }) {
+export function Header({
+  isMenuOpen,
+  setIsMenuOpen,
+  activeSection,
+  handleSectionScroll,
+}) {
   const isDesktop = useMediaQuery({ minWidth: 1024 });
 
   return (
-    <Container>
+    <Container id="header">
       <Brand>
         <h1>Marta Machado Rocha</h1>
       </Brand>
@@ -24,6 +29,10 @@ export function Header({ isMenuOpen, setIsMenuOpen, activeSection }) {
               <a
                 href="#home"
                 className={activeSection === "home" ? "active" : ""}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleSectionScroll("home");
+                }}
               >
                 Home
               </a>
@@ -32,6 +41,10 @@ export function Header({ isMenuOpen, setIsMenuOpen, activeSection }) {
               <a
                 href="#books"
                 className={activeSection === "books" ? "active" : ""}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleSectionScroll("books");
+                }}
               >
                 Livros
               </a>
@@ -40,6 +53,10 @@ export function Header({ isMenuOpen, setIsMenuOpen, activeSection }) {
               <a
                 href="#tales"
                 className={activeSection === "tales" ? "active" : ""}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleSectionScroll("tales");
+                }}
               >
                 Contos
               </a>
@@ -48,6 +65,10 @@ export function Header({ isMenuOpen, setIsMenuOpen, activeSection }) {
               <a
                 href="#news"
                 className={activeSection === "news" ? "active" : ""}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleSectionScroll("news");
+                }}
               >
                 Notícias
               </a>

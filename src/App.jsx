@@ -16,6 +16,13 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
+  function handleSectionScroll(sectionId) {
+    const headerHeight = document.getElementById("header").offsetHeight;
+    const section = document.getElementById(sectionId);
+    const offsetTop = section.offsetTop - headerHeight;
+    window.scrollTo({ top: offsetTop });
+  }
+
   const booksData = [
     {
       src: "https://m.media-amazon.com/images/I/416ZtVU96OL.jpg",
@@ -112,6 +119,7 @@ function App() {
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
         activeSection={activeSection}
+        handleSectionScroll={handleSectionScroll}
       />
 
       {!isDesktop && (
@@ -119,6 +127,7 @@ function App() {
           isMenuOpen={isMenuOpen}
           setIsMenuOpen={setIsMenuOpen}
           activeSection={activeSection}
+          handleSectionScroll={handleSectionScroll}
         />
       )}
 
@@ -182,7 +191,7 @@ function App() {
         </Section>
       </main>
 
-      <BackToTop />
+      <BackToTop handleSectionScroll={handleSectionScroll} />
 
       <Footer />
     </Container>

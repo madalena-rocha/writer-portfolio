@@ -1,11 +1,18 @@
 import { Container } from "./styles";
 
-export function Menu({ isMenuOpen, activeSection }) {
+export function Menu({ isMenuOpen, activeSection, handleSectionScroll }) {
   return (
     <Container isMenuOpen={isMenuOpen}>
       <ul>
         <li>
-          <a href="#home" className={activeSection === "home" ? "active" : ""}>
+          <a
+            href="#home"
+            className={activeSection === "home" ? "active" : ""}
+            onClick={(e) => {
+              e.preventDefault();
+              handleSectionScroll("home");
+            }}
+          >
             Home
           </a>
         </li>
@@ -13,6 +20,10 @@ export function Menu({ isMenuOpen, activeSection }) {
           <a
             href="#books"
             className={activeSection === "books" ? "active" : ""}
+            onClick={(e) => {
+              e.preventDefault();
+              handleSectionScroll("books");
+            }}
           >
             Livros
           </a>
@@ -21,12 +32,23 @@ export function Menu({ isMenuOpen, activeSection }) {
           <a
             href="#tales"
             className={activeSection === "tales" ? "active" : ""}
+            onClick={(e) => {
+              e.preventDefault();
+              handleSectionScroll("tales");
+            }}
           >
             Contos
           </a>
         </li>
         <li>
-          <a href="#news" className={activeSection === "news" ? "active" : ""}>
+          <a
+            href="#news"
+            className={activeSection === "news" ? "active" : ""}
+            onClick={(e) => {
+              e.preventDefault();
+              handleSectionScroll("news");
+            }}
+          >
             Notícias
           </a>
         </li>
