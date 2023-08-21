@@ -44,11 +44,6 @@ export const About = styled.section`
   text-align: center;
 
   margin-top: 3.2rem;
-
-  > p {
-    width: 80%;
-    margin-top: 2.4rem;
-  }
 `;
 
 export const Profile = styled.div`
@@ -65,4 +60,13 @@ export const Profile = styled.div`
     border: 4px solid ${({ theme }) => theme.COLORS.BRAND};
     border-radius: 50%;
   }
+`;
+
+export const Presentation = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  width: 80%;
+  margin-top: 2.4rem;
 `;

@@ -9,7 +9,7 @@ import { New } from "./components/New";
 import { BackToTop } from "./components/BackToTop";
 import { Footer } from "./components/Footer";
 
-import { Container, About, Profile } from "./App.js";
+import { Container, About, Profile, Presentation } from "./App.js";
 
 function App() {
   const isDesktop = useMediaQuery({ minWidth: 1024 });
@@ -111,12 +111,20 @@ function App() {
             <img src="https://m.media-amazon.com/images/S/amzn-author-media-prod/v0f9vlqdqo3p56bgjt02q3pdb7.jpg" />
           </Profile>
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            quisquam, neque tenetur placeat, odit suscipit quasi eos nihil, et
-            nam corporis natus illum? Similique nesciunt libero, recusandae
-            expedita unde error?
-          </p>
+          <Presentation>
+            <p>
+              Sou baiana nascida na cidade de Irecê. Cresci entre as cidades de
+              Uibaí, onde realizei os estudos da educação básica e comecei a me
+              interessar pela leitura e a escrita, e Central, cidade em que se
+              localiza a propriedade rural da minha família.
+            </p>
+            <p>
+              Após completar meus estudos, cursei pedagogia. Sou mãe de quatro
+              filhos, e minha rotina é dividida entre os cuidados com as
+              crianças, a dedicação à escrita e à leitura, e também alguns
+              trabalhos voluntários na área pedagógica.
+            </p>
+          </Presentation>
         </About>
 
         <Section title="Livros" id="books">
