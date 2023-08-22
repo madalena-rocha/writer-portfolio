@@ -1,8 +1,8 @@
 export default {
   COLORS: {
-    BACKGROUND_800: "#343330",
+    BACKGROUND_800: "#343332",
 
-    WHITE: "#EEEAE3",
-    BRAND: "#AB989B",
+    WHITE: "#FFFFFF",
+    BRAND: "#F8F4EB",
   },
 };

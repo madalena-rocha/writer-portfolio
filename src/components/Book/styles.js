@@ -7,7 +7,6 @@ export const Container = styled.div`
 
   background-color: ${({ theme }) => theme.COLORS.BRAND};
   padding: 2.4rem;
-  border-radius: 8px;
 
   @media (min-width: 768px) {
     flex-direction: row;

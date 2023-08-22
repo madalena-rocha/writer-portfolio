@@ -9,6 +9,7 @@ export const Container = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 3.2rem;
 
   padding: 1.6rem 2.8rem;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
@@ -57,8 +58,20 @@ export const Navigation = styled.nav`
     gap: 3.2rem;
   }
 
-  .active {
-    font-weight: 700;
-    color: ${({ theme }) => theme.COLORS.BRAND};
+  a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: ${({ theme }) => theme.COLORS.WHITE};
+    position: relative;
+    bottom: -4.3rem;
+    left: -0.5rem;
+    display: block;
+    transition: width 0.2s;
+  }
+  
+  a.active::after {
+    padding-inline: 0.8rem;
+    width: 100%;
   }
 `;

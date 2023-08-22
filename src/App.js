@@ -10,13 +10,7 @@ export const Container = styled.div`
 
   > main {
     grid-area: content;
-    
-    display: flex;
-    flex-direction: column;
-    gap: 6.4rem;
-
     width: 100%;
-    padding-inline: 2.8rem;
 
     background-color: ${({ theme }) => theme.COLORS.WHITE};
     color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
@@ -26,21 +20,23 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     
-    margin-top: 6.4rem;
+    margin-top: 3.2rem;
+  }
+
+  #books, #news {
+    background-color: ${({ theme }) => theme.COLORS.BRAND};
   }
 
   #books > div, #tales > div {
     text-align: left;
   }
 
-  section:last-of-type {
-    margin-bottom: 6.4rem;
+  #books > div > div {
+    background-color: ${({ theme }) => theme.COLORS.WHITE};
   }
 
-  @media (min-width: 1024px) {
-    > main {
-      padding-inline: 12.3rem;
-    }
+  #news {
+    padding-bottom: 12.8rem;
   }
 `;
 
@@ -65,6 +61,5 @@ export const Presentation = styled.div`
   flex-direction: column;
   gap: 1.6rem;
 
-  width: 80%;
   margin-top: 2.4rem;
 `;

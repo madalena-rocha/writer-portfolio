@@ -8,7 +8,7 @@ export const Container = styled.div`
 
   margin-top: 10.8rem;
   padding: 3.2rem 2.8rem;
-  background-color: ${({ theme }) => theme.COLORS.WHITE};
+  background-color: ${({ theme }) => theme.COLORS.BRAND};
 
   &.visible {
     visibility: visible;
@@ -33,7 +33,6 @@ export const Container = styled.div`
 
     .active {
       font-weight: 700;
-      color: ${({ theme }) => theme.COLORS.BRAND};
     }
   }
 `;

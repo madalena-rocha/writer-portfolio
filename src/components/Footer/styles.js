@@ -9,6 +9,7 @@ export const Container = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 3.2rem;
 
   @media (min-width: 1024px) {
     padding-inline: 12.3rem;
