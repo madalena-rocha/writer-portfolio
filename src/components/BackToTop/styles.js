@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.a`
   display: flex;
-  position: fixed;
-  bottom: 11.6rem;
+  position: absolute;
+  bottom: 4.35rem;
   right: 2.8rem;
-  z-index: 10;
 
   color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+  border: 2px solid ${({ theme }) => theme.COLORS.BACKGROUND_800};
+  padding: 1rem 1.6rem;
 
   @media (min-width: 1024px) {
     right: 12.3rem;

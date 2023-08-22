@@ -11,6 +11,7 @@ export const Container = styled.div`
   > main {
     grid-area: content;
     width: 100%;
+    position: relative;
 
     background-color: ${({ theme }) => theme.COLORS.WHITE};
     color: ${({ theme }) => theme.COLORS.BACKGROUND_800};

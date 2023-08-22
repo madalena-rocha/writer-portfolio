@@ -1,5 +1,3 @@
-import { ArrowCircleUp } from "phosphor-react";
-
 import { Container } from "./styles";
 
 export function BackToTop({ handleSectionScroll }) {
@@ -11,7 +9,7 @@ export function BackToTop({ handleSectionScroll }) {
         handleSectionScroll("home");
       }}
     >
-      <ArrowCircleUp size={48} />
+      Voltar ao topo
     </Container>
   );
 }

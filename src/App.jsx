@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
 import { Header } from "./components/Header";
@@ -14,7 +14,6 @@ import { Container, Profile, Presentation } from "./App.js";
 function App() {
   const isDesktop = useMediaQuery({ minWidth: 1024 });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [showBackToTop, setShowBackToTop] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
   function handleSectionScroll(sectionId) {
@@ -23,21 +22,6 @@ function App() {
     const offsetTop = section.offsetTop - headerHeight;
     window.scrollTo({ top: offsetTop });
   }
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 550) {
-        setShowBackToTop(true);
-      } else {
-        setShowBackToTop(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   const booksData = [
     {
@@ -217,9 +201,9 @@ function App() {
             />
           ))}
         </Section>
+        
+        <BackToTop handleSectionScroll={handleSectionScroll} />
       </main>
-
-      {showBackToTop && <BackToTop handleSectionScroll={handleSectionScroll} />}
 
       <Footer />
     </Container>
