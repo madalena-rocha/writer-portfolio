@@ -55,7 +55,7 @@ function App() {
       description: [
         "Bem-vindos às Terras Ocultas, um lugar cheio de lendas e mistérios!",
         "Aqui você conhecerá Pedro, um tranquilo morador do Vale que vê sua vida desmoronar ao confirmar o envolvimento da esposa com Eduardo. Para piorar as coisas, Nandinho, antigo inimigo de Pedro, que vivia há anos do outro lado das montanhas, volta para colocar em prática o seu plano.",
-        "Em meio à tristeza e o abuso de álcool, Pedro recebe a visita de um misterioso ser em seus sonhos, a quem chama de \"amigo secreto\". Aos poucos, fatos estranhos se tornam cada vez mais presentes em sua vida.",
+        'Em meio à tristeza e o abuso de álcool, Pedro recebe a visita de um misterioso ser em seus sonhos, a quem chama de "amigo secreto". Aos poucos, fatos estranhos se tornam cada vez mais presentes em sua vida.',
         "Após se tornar cadeirante, ele vê Nandinho ganhar poderes e iniciar uma grande perseguição no Vale. Então, seu amigo lhe revela que ele é o escolhido para devolver a tranquilidade para aquelas terras.",
         "Para isso, ele contará com a ajuda das pessoas mais improváveis, terá que rever suas intrigas pessoais e iniciar sua jornada rumo às montanhas à procura de respostas.",
       ],
@@ -157,10 +157,10 @@ function App() {
               localiza a propriedade rural da minha família.
             </p>
             <p>
-              Após completar meus estudos, cursei pedagogia. Sou mãe de quatro
-              filhos, e minha rotina é dividida entre os cuidados com as
-              crianças, a dedicação à escrita e à leitura, e também alguns
-              trabalhos voluntários na área pedagógica.
+              Sou formada em pedagogia e sou mãe de quatro filhos. Atualmente,
+              minha rotina é dividida entre os cuidados com as crianças, a
+              dedicação à escrita e à leitura, e também alguns trabalhos
+              voluntários na área pedagógica.
             </p>
           </Presentation>
         </Section>
@@ -201,7 +201,7 @@ function App() {
             />
           ))}
         </Section>
-        
+
         <BackToTop handleSectionScroll={handleSectionScroll} />
       </main>
 

@@ -11,6 +11,9 @@ export const Container = styled.footer`
   justify-content: space-between;
   gap: 3.2rem;
 
+  background-color: ${({ theme }) => theme.COLORS.BRAND};
+  border-top: 1px solid ${({ theme }) => theme.COLORS.DARK};
+
   @media (min-width: 1024px) {
     padding-inline: 12.3rem;
   }

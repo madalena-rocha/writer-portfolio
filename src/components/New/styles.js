@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.a`
-  background-color: ${({ theme }) => theme.COLORS.WHITE};
-  color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+  background-color: ${({ theme }) => theme.COLORS.BRAND};
   
   padding: 2.4rem;
   text-align: center;

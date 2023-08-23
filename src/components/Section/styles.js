@@ -18,10 +18,12 @@ export const Container = styled.section`
   }
 
   @media (min-width: 1024px) {
+    padding-inline: 12.3rem;
+  }
+
+  @media (min-width: 1200px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 3.2rem;
-
-    padding-inline: 12.3rem;
   }
 `;

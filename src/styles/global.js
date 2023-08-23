@@ -19,23 +19,24 @@ export default createGlobalStyle`
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
 
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
-    color: ${({ theme }) => theme.COLORS.WHITE};
+    background-color: ${({ theme }) => theme.COLORS.WHITE};
+    color: ${({ theme }) => theme.COLORS.DARK};
 		-webkit-font-smoothing: antialiased;
   }
 
   ::-webkit-scrollbar {
     width: 0.8rem;
+    background-color: ${({ theme }) => theme.COLORS.BRAND};
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: ${({ theme }) => theme.COLORS.BRAND};
+    background-color: ${({ theme }) => theme.COLORS.DARK};
     border-radius: 0.8rem;
   }
 
   a {
     text-decoration: none;
-    color: ${({ theme }) => theme.COLORS.WHITE};
+    color: ${({ theme }) => theme.COLORS.DARK};
   }
 
   ul li {

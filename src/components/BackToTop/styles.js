@@ -6,8 +6,7 @@ export const Container = styled.a`
   bottom: 4.35rem;
   right: 2.8rem;
 
-  color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
-  border: 2px solid ${({ theme }) => theme.COLORS.BACKGROUND_800};
+  border: 2px solid ${({ theme }) => theme.COLORS.DARK};
   padding: 1rem 1.6rem;
 
   @media (min-width: 1024px) {

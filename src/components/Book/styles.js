@@ -24,7 +24,6 @@ export const Image = styled.div`
 export const Details = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 2.4rem;
 
   > div p + p {
@@ -35,6 +34,7 @@ export const Details = styled.div`
     width: fit-content;
     padding: 1rem 1.6rem;
     border-radius: 8px;
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+    background-color: ${({ theme }) => theme.COLORS.DARK};
+    color: ${({ theme }) => theme.COLORS.WHITE};
   }
 `;

@@ -12,7 +12,8 @@ export const Container = styled.header`
   gap: 3.2rem;
 
   padding: 1.6rem 2.8rem;
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+  background-color: ${({ theme }) => theme.COLORS.BRAND};
+  border-bottom: 1px solid ${({ theme }) => theme.COLORS.DARK};
 
   position: fixed;
   z-index: 9999;
@@ -25,7 +26,6 @@ export const Container = styled.header`
 export const Brand = styled.div`
   > h1 {
     font-size: 2.8rem;
-    color: ${({ theme }) => theme.COLORS.BRAND};
   }
 `;
 
@@ -58,15 +58,22 @@ export const Navigation = styled.nav`
     gap: 3.2rem;
   }
 
+  .active {
+    font-weight: 700;
+  }
+
   a::after {
     content: '';
     width: 0%;
     height: 2px;
-    background-color: ${({ theme }) => theme.COLORS.WHITE};
+    background-color: ${({ theme }) => theme.COLORS.DARK};
+
     position: relative;
     bottom: -4.3rem;
     left: -0.5rem;
+
     display: block;
+
     transition: width 0.2s;
   }
   

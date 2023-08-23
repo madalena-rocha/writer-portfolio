@@ -27,10 +27,6 @@ export const Container = styled.div`
     flex-direction: column;
     gap: 3.2rem;
 
-    a {
-      color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
-    }
-
     .active {
       font-weight: 700;
     }

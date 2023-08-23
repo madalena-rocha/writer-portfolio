@@ -13,20 +13,25 @@ export const Container = styled.div`
 
     width: 100%;
     position: relative;
-
-    background-color: ${({ theme }) => theme.COLORS.WHITE};
-    color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
   }
 
   #home {
-    padding-top: 12.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 6.4rem;
+
+    > h2 {
+      display: none;
+    }
   }
 
-  #books, #news {
+  #home, #tales {
     background-color: ${({ theme }) => theme.COLORS.BRAND};
   }
 
-  #books > div {
+  #tales > div {
     background-color: ${({ theme }) => theme.COLORS.WHITE};
   }
 
@@ -34,24 +39,16 @@ export const Container = styled.div`
     padding-bottom: 12.8rem;
 
     > a {
+      width: 100%;
       transition: all 0.3s ease-in-out;
 
       &:hover {
-        background-color: ${({ theme }) => theme.COLORS.BRAND};
         transform: none;
       }
     }
   }
 
   @media (min-width: 768px) {
-    #home {
-      display: grid;
-      grid-template-columns: 1fr 4fr;
-      grid-template-areas:
-        "profile presentation";
-      grid-gap: 0 2.4rem;
-    }
-
     #news {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -60,10 +57,6 @@ export const Container = styled.div`
   }
 
   @media (min-width: 1024px) {
-    #home {
-      grid-gap: 0 3.2rem;
-    }
-
     #tales {
       grid-template-areas:
         "book1 title"
@@ -77,30 +70,25 @@ export const Container = styled.div`
 `;
 
 export const Profile = styled.div`
-  grid-area: profile;
-
-  width: 20rem;
-  height: 32rem;
+  display: flex;
 
   > img {
-    width: 100%;
-    height: 100%;
+    width: 20rem;
+    height: 20rem;
     object-fit: cover;
     object-position: top;
+
+    padding: 3px;
+    border: 3px solid ${({ theme }) => theme.COLORS.WHITE};
+    border-radius: 50%;
   }
 `;
 
 export const Presentation = styled.div`
-  grid-area: presentation;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1.6rem;
 
   text-align: center;
-
-  @media (min-width: 768px) {
-    text-align: left;
-  }
 `;
