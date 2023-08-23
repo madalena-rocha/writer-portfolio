@@ -33,7 +33,7 @@ export function Section({ id, title, children, setActiveSection }) {
   return (
     <Container ref={sectionRef} id={id}>
       <h2>{title}</h2>
-      <div>{children}</div>
+      {children}
     </Container>
   );
 }

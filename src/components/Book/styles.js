@@ -11,10 +11,6 @@ export const Container = styled.div`
   @media (min-width: 768px) {
     flex-direction: row;
   }
-
-  @media (min-width: 1024px) {
-    width: calc(50% - 1.6rem);
-  }
 `;
 
 export const Image = styled.div`

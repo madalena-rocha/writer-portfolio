@@ -16,14 +16,12 @@ export default createGlobalStyle`
   }
   
   body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
     color: ${({ theme }) => theme.COLORS.WHITE};
 		-webkit-font-smoothing: antialiased;
-  }
-
-  body, button {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.6rem;
   }
 
   ::-webkit-scrollbar {
@@ -44,21 +42,12 @@ export default createGlobalStyle`
     list-style: none;
   }
 
-  button {
-    background: none;
-    border: none;
-  }
-
-  button, svg {
-    cursor: pointer;
-  }
-
-  a, li, button, svg {
+  a, li, svg {
     cursor: pointer;
     transition: filter 0.2s, transform 0.5s;
   }
 
-  a:hover, li:hover, button:hover, svg:hover {
+  a:hover, li:hover, svg:hover {
     filter: brightness(0.9);
     transform: scale(1.1);
   }

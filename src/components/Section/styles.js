@@ -1,22 +1,27 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.2rem;
+
   padding: 6.4rem 2.8rem;
   
   > h2 {
-    font-size: 2.8rem;
-    margin-bottom: 3.2rem;
-  }
-
-  > div {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    gap: 2.4rem;
+
+    font-size: 2.8rem;
+    text-transform: uppercase;
   }
 
   @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3.2rem;
+
     padding-inline: 12.3rem;
   }
 `;

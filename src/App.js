@@ -10,6 +10,7 @@ export const Container = styled.div`
 
   > main {
     grid-area: content;
+
     width: 100%;
     position: relative;
 
@@ -17,50 +18,89 @@ export const Container = styled.div`
     color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
   }
 
-  #home > div {
-    flex-direction: column;
-    align-items: center;
-    
-    margin-top: 3.2rem;
+  #home {
+    padding-top: 12.8rem;
   }
 
   #books, #news {
     background-color: ${({ theme }) => theme.COLORS.BRAND};
   }
 
-  #books > div, #tales > div {
-    text-align: left;
-  }
-
-  #books > div > div {
+  #books > div {
     background-color: ${({ theme }) => theme.COLORS.WHITE};
   }
 
   #news {
     padding-bottom: 12.8rem;
+
+    > a {
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: ${({ theme }) => theme.COLORS.BRAND};
+        transform: none;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    #home {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      grid-template-areas:
+        "profile presentation";
+      grid-gap: 0 2.4rem;
+    }
+
+    #news {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2.4rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    #home {
+      grid-gap: 0 3.2rem;
+    }
+
+    #tales {
+      grid-template-areas:
+        "book1 title"
+        "book2 book3";
+    }
+
+    #tales > h2 {
+      grid-area: title;
+    }
   }
 `;
 
 export const Profile = styled.div`
+  grid-area: profile;
+
   width: 20rem;
-  height: 20rem;
+  height: 32rem;
 
   > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: top;
-
-    padding: 3.7px;
-    border: 4px solid ${({ theme }) => theme.COLORS.BRAND};
-    border-radius: 50%;
   }
 `;
 
 export const Presentation = styled.div`
+  grid-area: presentation;
+
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1.6rem;
 
-  margin-top: 2.4rem;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
 `;
