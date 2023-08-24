@@ -1,4 +1,15 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+export const animation = keyframes`
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+`;
 
 export const Container = styled.div`
   display: grid;
@@ -13,6 +24,11 @@ export const Container = styled.div`
 
     width: 100%;
     position: relative;
+
+    > section > div,
+    > section > a {
+      animation: ${animation} 1s ease forwards;
+    }
   }
 
   #home {
