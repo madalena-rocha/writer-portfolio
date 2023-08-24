@@ -1,4 +1,4 @@
-import { InstagramLogo, FacebookLogo } from "phosphor-react";
+import { InstagramLogo, FacebookLogo, EnvelopeSimple } from "phosphor-react";
 
 import { Container, Copyright, SocialMedia } from "./styles";
 
@@ -11,6 +11,9 @@ export function Footer() {
       </Copyright>
 
       <SocialMedia>
+        <a href="mailto:martamachadorocha7@gmail.com" target="_blank">
+          <EnvelopeSimple size={24} />
+        </a>
         <a
           href="https://www.instagram.com/marta.machado.rocha/"
           target="_blank"
