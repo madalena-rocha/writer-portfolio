@@ -17,10 +17,8 @@ function App() {
   const [activeSection, setActiveSection] = useState("home");
 
   function handleSectionScroll(sectionId) {
-    const headerHeight = document.getElementById("header").offsetHeight;
     const section = document.getElementById(sectionId);
-    const offsetTop = section.offsetTop - headerHeight;
-    window.scrollTo({ top: offsetTop });
+    window.scrollTo({ top: section.offsetTop });
   }
 
   const booksData = [
