@@ -1,14 +1,10 @@
 import { List, X } from "phosphor-react";
 import { useMediaQuery } from "react-responsive";
+import { Link } from "react-scroll";
 
 import { Container, Brand, Icon, Navigation } from "./styles";
 
-export function Header({
-  isMenuOpen,
-  setIsMenuOpen,
-  activeSection,
-  handleSectionScroll,
-}) {
+export function Header({ isMenuOpen, setIsMenuOpen }) {
   const isDesktop = useMediaQuery({ minWidth: 1024 });
 
   return (
@@ -34,52 +30,48 @@ export function Header({
         <Navigation>
           <ul>
             <li>
-              <a
-                href="#home"
-                className={activeSection === "home" ? "active" : ""}
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleSectionScroll("home");
-                }}
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-108}
+                duration={500}
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#books"
-                className={activeSection === "books" ? "active" : ""}
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleSectionScroll("books");
-                }}
+              <Link
+                to="books"
+                spy={true}
+                smooth={true}
+                offset={-108}
+                duration={500}
               >
                 Livros
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#tales"
-                className={activeSection === "tales" ? "active" : ""}
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleSectionScroll("tales");
-                }}
+              <Link
+                to="tales"
+                spy={true}
+                smooth={true}
+                offset={-108}
+                duration={500}
               >
                 Contos
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#news"
-                className={activeSection === "news" ? "active" : ""}
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleSectionScroll("news");
-                }}
+              <Link
+                to="news"
+                spy={true}
+                smooth={true}
+                offset={-108}
+                duration={500}
               >
                 Notícias
-              </a>
+              </Link>
             </li>
           </ul>
         </Navigation>

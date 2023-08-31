@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
+import { Element } from "react-scroll";
 
 import { Header } from "./components/Header";
 import { Menu } from "./components/Menu";
@@ -14,12 +15,6 @@ import { Container, Profile, Presentation } from "./App.js";
 function App() {
   const isDesktop = useMediaQuery({ minWidth: 1024 });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("home");
-
-  function handleSectionScroll(sectionId) {
-    const section = document.getElementById(sectionId);
-    window.scrollTo({ top: section.offsetTop });
-  }
 
   const booksData = [
     {
@@ -125,82 +120,80 @@ function App() {
 
   return (
     <Container>
-      <Header
-        isMenuOpen={isMenuOpen}
-        setIsMenuOpen={setIsMenuOpen}
-        activeSection={activeSection}
-        handleSectionScroll={handleSectionScroll}
-      />
+      <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
 
       {!isDesktop && (
-        <Menu
-          isMenuOpen={isMenuOpen}
-          setIsMenuOpen={setIsMenuOpen}
-          activeSection={activeSection}
-          handleSectionScroll={handleSectionScroll}
-        />
+        <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       )}
 
       <main>
-        <Section title="" id="home" setActiveSection={setActiveSection}>
-          <Profile>
-            <img src="https://m.media-amazon.com/images/S/amzn-author-media-prod/v0f9vlqdqo3p56bgjt02q3pdb7.jpg" />
-          </Profile>
+        <Element name="home">
+          <Section title="" id="home">
+            <Profile>
+              <img src="https://m.media-amazon.com/images/S/amzn-author-media-prod/v0f9vlqdqo3p56bgjt02q3pdb7.jpg" />
+            </Profile>
 
-          <Presentation>
-            <p>
-              Sou baiana nascida na cidade de Irecê. Cresci entre as cidades de
-              Uibaí, onde realizei os estudos da educação básica e comecei a me
-              interessar pela leitura e a escrita, e Central, cidade em que se
-              localiza a propriedade rural da minha família.
-            </p>
-            <p>
-              Sou formada em pedagogia e sou mãe de quatro filhos. Atualmente,
-              minha rotina é dividida entre os cuidados com as crianças, a
-              dedicação à escrita e à leitura, e também alguns trabalhos
-              voluntários na área pedagógica.
-            </p>
-          </Presentation>
-        </Section>
+            <Presentation>
+              <p>
+                Sou baiana nascida na cidade de Irecê. Cresci entre as cidades
+                de Uibaí, onde realizei os estudos da educação básica e comecei
+                a me interessar pela leitura e a escrita, e Central, cidade em
+                que se localiza a propriedade rural da minha família.
+              </p>
+              <p>
+                Sou formada em pedagogia e sou mãe de quatro filhos. Atualmente,
+                minha rotina é dividida entre os cuidados com as crianças, a
+                dedicação à escrita e à leitura, e também alguns trabalhos
+                voluntários na área pedagógica.
+              </p>
+            </Presentation>
+          </Section>
+        </Element>
 
-        <Section title="Livros" id="books" setActiveSection={setActiveSection}>
-          {booksData.map((book, index) => (
-            <Book
-              key={index}
-              src={book.src}
-              alt={book.alt}
-              title={book.title}
-              description={book.description}
-              href={book.href}
-            />
-          ))}
-        </Section>
+        <Element name="books">
+          <Section title="Livros" id="books">
+            {booksData.map((book, index) => (
+              <Book
+                key={index}
+                src={book.src}
+                alt={book.alt}
+                title={book.title}
+                description={book.description}
+                href={book.href}
+              />
+            ))}
+          </Section>
+        </Element>
 
-        <Section title="Contos" id="tales" setActiveSection={setActiveSection}>
-          {talesData.map((tale, index) => (
-            <Book
-              key={index}
-              src={tale.src}
-              alt={tale.alt}
-              title={tale.title}
-              description={tale.description}
-              href={tale.href}
-            />
-          ))}
-        </Section>
+        <Element name="tales">
+          <Section title="Contos" id="tales">
+            {talesData.map((tale, index) => (
+              <Book
+                key={index}
+                src={tale.src}
+                alt={tale.alt}
+                title={tale.title}
+                description={tale.description}
+                href={tale.href}
+              />
+            ))}
+          </Section>
+        </Element>
 
-        <Section title="Notícias" id="news" setActiveSection={setActiveSection}>
-          {newsData.map((notice, index) => (
-            <New
-              key={index}
-              href={notice.href}
-              title={notice.title}
-              date={notice.date}
-            />
-          ))}
-        </Section>
+        <Element name="news">
+          <Section title="Notícias" id="news">
+            {newsData.map((notice, index) => (
+              <New
+                key={index}
+                href={notice.href}
+                title={notice.title}
+                date={notice.date}
+              />
+            ))}
+          </Section>
+        </Element>
 
-        <BackToTop handleSectionScroll={handleSectionScroll} />
+        <BackToTop />
       </main>
 
       <Footer />

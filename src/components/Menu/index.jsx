@@ -1,65 +1,66 @@
+import { Link } from "react-scroll";
+
 import { Container } from "./styles";
 
-export function Menu({
-  isMenuOpen,
-  setIsMenuOpen,
-  activeSection,
-  handleSectionScroll,
-}) {
+export function Menu({ isMenuOpen, setIsMenuOpen }) {
   return (
-    <Container className={isMenuOpen ? 'visible' : 'hidden'}>
+    <Container className={isMenuOpen ? "visible" : "hidden"}>
       <ul>
         <li>
-          <a
-            href="#home"
-            className={activeSection === "home" ? "active" : ""}
+          <Link
+            to="home"
             onClick={(e) => {
-              e.preventDefault();
-              handleSectionScroll("home");
               setIsMenuOpen(false);
             }}
+            spy={true}
+            smooth={true}
+            offset={-108}
+            duration={500}
           >
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="#books"
-            className={activeSection === "books" ? "active" : ""}
+          <Link
+            to="books"
             onClick={(e) => {
-              e.preventDefault();
-              handleSectionScroll("books");
               setIsMenuOpen(false);
             }}
+            spy={true}
+            smooth={true}
+            offset={-108}
+            duration={500}
           >
             Livros
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="#tales"
-            className={activeSection === "tales" ? "active" : ""}
+          <Link
+            to="tales"
             onClick={(e) => {
-              e.preventDefault();
-              handleSectionScroll("tales");
               setIsMenuOpen(false);
             }}
+            spy={true}
+            smooth={true}
+            offset={-108}
+            duration={500}
           >
             Contos
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="#news"
-            className={activeSection === "news" ? "active" : ""}
+          <Link
+            to="news"
             onClick={(e) => {
-              e.preventDefault();
-              handleSectionScroll("news");
               setIsMenuOpen(false);
             }}
+            spy={true}
+            smooth={true}
+            offset={-108}
+            duration={500}
           >
             Notícias
-          </a>
+          </Link>
         </li>
       </ul>
     </Container>
