@@ -19,6 +19,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - ReactJS
 - ReactDOM
 - React Responsive
+- React Scroll
 - Styled Components
 - Phosphor React
 - ViteJS
