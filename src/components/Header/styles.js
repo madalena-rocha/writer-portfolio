@@ -58,6 +58,7 @@ export const Navigation = styled.nav`
     gap: 3.2rem;
   }
 
+  a:hover,
   .active {
     font-weight: 700;
   }
@@ -77,6 +78,7 @@ export const Navigation = styled.nav`
     transition: width 0.2s;
   }
   
+  a:hover::after,
   a.active::after {
     padding-inline: 0.8rem;
     width: 100%;

@@ -28,4 +28,13 @@ export const SocialMedia = styled.div`
   a {
     display: flex;
   }
+
+  a, svg {
+    transition: filter 0.2s, transform 0.5s;
+
+    &:hover {
+      filter: brightness(0.9);
+      transform: scale(1.1);
+    }
+  }
 `;

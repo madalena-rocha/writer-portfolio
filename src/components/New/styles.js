@@ -9,4 +9,10 @@ export const Container = styled.a`
   > h2 {
     margin-bottom: 2.4rem;
   }
+
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
 `;

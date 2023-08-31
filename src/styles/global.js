@@ -36,20 +36,11 @@ export default createGlobalStyle`
 
   a {
     text-decoration: none;
+    cursor: pointer;
     color: ${({ theme }) => theme.COLORS.DARK};
   }
 
   ul li {
     list-style: none;
-  }
-
-  a, li, svg {
-    cursor: pointer;
-    transition: filter 0.2s, transform 0.5s;
-  }
-
-  a:hover, li:hover, svg:hover {
-    filter: brightness(0.9);
-    transform: scale(1.1);
   }
 `;

@@ -36,8 +36,6 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
 
-    padding-top: 6.4rem;
-
     > h2 {
       display: none;
     }
@@ -57,10 +55,6 @@ export const Container = styled.div`
     > a {
       width: 100%;
       transition: all 0.3s ease-in-out;
-
-      &:hover {
-        transform: none;
-      }
     }
   }
 
@@ -73,6 +67,12 @@ export const Container = styled.div`
   }
 
   @media (min-width: 1024px) {
+    #news {
+      grid-gap: 3.2rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
     #tales {
       grid-template-areas:
         "book1 title"
@@ -107,4 +107,5 @@ export const Presentation = styled.div`
   gap: 1.6rem;
 
   text-align: center;
+  padding-inline: 2.4rem;
 `;
