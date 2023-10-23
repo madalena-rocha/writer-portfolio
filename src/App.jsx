@@ -18,6 +18,7 @@ function App() {
 
   const booksData = [
     {
+      id: "3",
       src: "https://m.media-amazon.com/images/I/416ZtVU96OL.jpg",
       alt: "",
       title: "Mariana: Em Busca de um Sentido",
@@ -30,6 +31,7 @@ function App() {
       href: "https://a.co/d/ivy0YRj",
     },
     {
+      id: "2",
       src: "https://m.media-amazon.com/images/I/51VTOFxuK8L.jpg",
       alt: "",
       title: "Memórias e Lenços",
@@ -42,6 +44,7 @@ function App() {
       href: "https://a.co/d/9wLfEyE",
     },
     {
+      id: "1",
       src: "https://m.media-amazon.com/images/I/41mWh3AktmL.jpg",
       alt: "",
       title: "Vidas Entrelaçadas",
@@ -58,6 +61,7 @@ function App() {
 
   const talesData = [
     {
+      id: "3",
       src: "https://m.media-amazon.com/images/I/31vHOY2oxvL.jpg",
       alt: "",
       title: "Maldição",
@@ -68,6 +72,7 @@ function App() {
       href: "https://a.co/d/b7yL2iL",
     },
     {
+      id: "2",
       src: "https://m.media-amazon.com/images/I/41l8NfBhJuL.jpg",
       alt: "",
       title: "Elos&Elas",
@@ -77,6 +82,7 @@ function App() {
       href: "https://a.co/d/bH6FcLg",
     },
     {
+      id: "1",
       src: "https://m.media-amazon.com/images/I/51WNi7Lm5KL.jpg",
       alt: "",
       title: "Literatura Fantástica: Revista Pulp Nacional",
@@ -92,26 +98,31 @@ function App() {
 
   const newsData = [
     {
+      id: "5",
       href: "https://doidosporserieselivros.blogspot.com/2023/01/lancamento-de-marta-machado-rocha.html?m=1&fbclid=IwAR1P0t7P_56sAvXsqoXHdWINZaOl6bkJ1GxBll1lhlwI5NRJCOiOs5tgrDk",
       title: "Doidos por Séries e Livros",
       date: "19 janeiro 2023",
     },
     {
+      id: "4",
       href: "https://ummergulhonaliteratura.blogspot.com/2021/07/entrevista-com-autora-marta-machado.html?m=1&fbclid=IwAR3TFL9LuooCpN-5zx1bzVSIv0oISGNxyRY5qLgubGUzAARta3GJAlCil1U",
       title: "Um Mergulho na Literatura",
       date: "16 julho 2021",
     },
     {
+      id: "3",
       href: "https://elizaeedgar.wixsite.com/entrecantosecontos/post/m%C3%A1culas-do-tempo?fbclid=IwAR1r7ATJSNCdURYRZSxZR--WxsC2xv0W56CWczj4hfP0Kw0V3aglI93fDfE",
       title: "Máculas do Tempo",
       date: "5 julho 2021",
     },
     {
+      id: "2",
       href: "https://dipapocomdudu.webnode.page/copia-de-2020/?fbclid=IwAR3NpSFzanFqGg6k6l0nZ0MZ9JxSpIh4MBpaKvs6MQHvwoZyUc8rFlqpMfY",
       title: "Di Papo com Dudu",
       date: "abril 2021",
     },
     {
+      id: "1",
       href: "https://novodiarionoticias.blogspot.com/2020/08/entrevista-com-autora-marta-machado.html?fbclid=IwAR3yeMo7WEVbmH8MF01Yi5jNfRkgPYuyzc3dVwIVdJKjQUCNnrS93Zh8PZo",
       title: "Diário de Notícias",
       date: "24 agosto 2020",
@@ -152,9 +163,9 @@ function App() {
 
         <Element name="books">
           <Section title="Livros" id="books">
-            {booksData.map((book, index) => (
+            {booksData.map((book, id) => (
               <Book
-                key={index}
+                key={id}
                 src={book.src}
                 alt={book.alt}
                 title={book.title}
@@ -167,9 +178,9 @@ function App() {
 
         <Element name="tales">
           <Section title="Contos" id="tales">
-            {talesData.map((tale, index) => (
+            {talesData.map((tale, id) => (
               <Book
-                key={index}
+                key={id}
                 src={tale.src}
                 alt={tale.alt}
                 title={tale.title}
@@ -182,9 +193,9 @@ function App() {
 
         <Element name="news">
           <Section title="Notícias" id="news">
-            {newsData.map((notice, index) => (
+            {newsData.map((notice, id) => (
               <New
-                key={index}
+                key={id}
                 href={notice.href}
                 title={notice.title}
                 date={notice.date}
